@@ -6,8 +6,9 @@ title: Cohost Events
 {% if post.secondary == 'secondary' %}
 	
 	<ul class="posts">
-	  {% for post in site.cohosts %}
-	    <li><span>{{ cohosts.date | date_to_string }}</span> 
-		» <a href="{{ cohosts.url }}" title="{{ cohosts.title }}">{{ cohosts.title }}</a></li>
+	  {% for post in site.posts %}
+	    <li><span>{{ post.date | date_to_string }}</span> 
+		» <a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a></li>
 	  {% endfor %}
+		  {% endif %}
 	</ul>
