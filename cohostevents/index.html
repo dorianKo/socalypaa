@@ -3,8 +3,11 @@ layout: default
 title: Cohost Events
 ---
 	<h1>{{ page.title }}</h1>
-	<ul class="posts">
 
+	{% if post.secondary != null %}
+
+   	 {% else %}
+	<ul class="posts">
 	  {% for post in site.cohosts %}
 	    <li><span>{{ cohosts.date | date_to_string }}</span> 
 		» <a href="{{ cohosts.url }}" title="{{ cohosts.title }}">{{ cohosts.title }}</a></li>
