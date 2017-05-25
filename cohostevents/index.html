@@ -6,6 +6,7 @@ title: Cohost Events
 	<ul class="posts">
 
 	  {% for post in site.cohosts %}
-	    <li><span>{{ post.date | date_to_string }}</span> » <a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a></li>
+	    <li><span>{{ cohosts.date | date_to_string }}</span> 
+		» <a href="{{ cohosts.url }}" title="{{ cohosts.title }}">{{ cohosts.title }}</a></li>
 	  {% endfor %}
 	</ul>
