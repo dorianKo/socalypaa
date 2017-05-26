@@ -2,10 +2,10 @@
 layout: default
 title: Events
 ---
-{% if post.categories == 'events' %}
+{% for post.categories == 'events' %}
 
 	<h1>{{ page.title }}</h1>
-{%endif%}
+{% endfor %}
 	<ul class="posts">
 
 	  {% for post in site.posts %}
